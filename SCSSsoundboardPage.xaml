@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SCSSsoundboard" x:Class="SCSSsoundboard.SCSSsoundboardPage">
+	<Grid BackgroundColor = "Green" >
+		<Grid.RowDefinitions RowSpacing = "2" ColumnSpacing = "2">
+		<RowDefinition Height = "1"/>
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width = "10"/>
+		</Grid.ColumnDefinitions>
+
+		<Image x:Name = "title" Source = "Title.png" Scale = "3.1" TranslationX = "-8" TranslationY = "-50" Grid.Row = "1" Grid.Column = "2"/>
+		<Label x:Name = "title2" Text = "Teacher Sounds" TextColor = "White" Grid.Row = "2" Grid.Column = "2" Grid.ColumnSpan = "2" Scale = "2" TranslationX = "47"/>
+
+		<Button x:Name = "booker1" Clicked = "booker1_Clicked" Image = "ramlogo.png" Grid.Row = "2" Grid.Column = "1" Scale = "0.6" TranslationY = "-100"/>
+		<Label x:Name = "booker1Title" Text = "Quiet on Set" Grid.Column = "1" Grid.Row = "3" TextColor = "White" TranslationY = "-160" />
+
+		<Button x:Name = "booker2" Clicked = "booker2_Clicked" Image = "ramlogo.png" Grid.Row = "2" Grid.Column = "2" Scale = "0.6" TranslationY = "-100" />
+		<Label x:Name = "booker2Title" Text = "Rock and Roll" Grid.Row = "3" Grid.Column = "2" Grid.ColumnSpan = "1" TextColor = "White" TranslationY = "-160"/>
+
+		<Button x:Name = "bannerman1" Clicked = "bannerman1_Clicked" Image = "ramlogo.png" Grid.Row = "2" Grid.Column = "3" Scale = "0.6" TranslationY = "-100"/>
+		<Label x:Name = "bannerman1Title" Text = "    2 Outta 3" Grid.Row = "3" Grid.Column = "3" TextColor = "White" TranslationY = "-160" />
+	</Grid>
+</ContentPage>
